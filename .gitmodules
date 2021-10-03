@@ -1,0 +1,3 @@
+[submodule "themes/yacht"]
+	path = themes/yacht
+	url = https://github.com/ccwoolf/yacht

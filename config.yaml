@@ -1,0 +1,67 @@
+baseURL: https://blog.woolf.dev
+theme: yacht
+title: blog.woolf.dev
+paginate: 3
+languageCode: "en-gb"
+enableInlineShortcodes: true
+
+author:
+  name: ccwoolf
+
+# prevent build failures when using Hugo's Instagram shortcode due to deprecated Instagram API.
+# See https://github.com/gohugoio/hugo/issues/7228#issuecomment-714490456
+ignoreErrors: ["error-remote-getjson"]
+
+# Automatically add content sections to main menu
+sectionPagesMenu: "main"
+
+params:
+  theme:
+    palette: "tokyo-night-storm"
+
+menu:
+  main:
+    - identifier: "about"
+      name: "About"
+      url: "/about/"
+      weight: 1
+    - identifier: "tags"
+      name: "Tags"
+      url: "/tags"
+      weight: 2
+
+taxonomies:
+  category: "categories"
+  tag: "tags"
+  series: "series"
+
+markup:
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
+
+services:
+  instagram:
+    disableInlineCSS: true
+
+  twitter:
+    disableInlineCSS: true
