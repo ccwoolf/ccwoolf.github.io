@@ -1,86 +1,66 @@
 <!doctype html><html lang=en>
-<head>
-<title>
-Westinghouse ceiling fan remote control with Home Assistant ::
-ccw@blog
+<head><title>
+blog.woolf.dev
+&ndash; Westinghouse ceiling fan remote control with Home Assistant
 </title>
-<meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=description content="The Westinghouse Bendan ceiling fan comes with an infrared remote control (model number ID6) which is used to set the fan speed and turn the light on and off.
-I&amp;rsquo;ve wanted to control the fan speed via my phone for a while, and have managed to do this using Home Assistant and a Broadlink RM3 Mini.
-Linking the RM3 Mini to Home assistant Adding the RM3 Mini to Home Assistant was relatively simple - but don&amp;rsquo;t bother with any of the instructions about setting up scripts as it&amp;rsquo;s easier to set the codes manually.">
-<meta name=keywords content>
-<meta name=robots content="noodp">
-<link rel=canonical href=/posts/ceiling-fan-control/>
-<link rel=stylesheet href=/assets/style.css>
-<link rel=stylesheet href=/style.css>
-<link rel=apple-touch-icon-precomposed sizes=144x144 href=/img/apple-touch-icon-144-precomposed.png>
-<link rel="shortcut icon" href=/img/favicon.png>
-<link href=/assets/fonts/Inter-Italic.woff2 rel=preload type=font/woff2 as=font crossorigin>
-<link href=/assets/fonts/Inter-Regular.woff2 rel=preload type=font/woff2 as=font crossorigin>
-<link href=/assets/fonts/Inter-Medium.woff2 rel=preload type=font/woff2 as=font crossorigin>
-<link href=/assets/fonts/Inter-MediumItalic.woff2 rel=preload type=font/woff2 as=font crossorigin>
-<link href=/assets/fonts/Inter-Bold.woff2 rel=preload type=font/woff2 as=font crossorigin>
-<link href=/assets/fonts/Inter-BoldItalic.woff2 rel=preload type=font/woff2 as=font crossorigin>
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Westinghouse ceiling fan remote control with Home Assistant">
-<meta name=twitter:description content="Notes on setting up a Westinghouse Bendan ceiling fan for remote control with Home Assistant using a Broadlink RM3 Mini">
-<meta property="og:title" content="Westinghouse ceiling fan remote control with Home Assistant">
-<meta property="og:description" content="Notes on setting up a Westinghouse Bendan ceiling fan for remote control with Home Assistant using a Broadlink RM3 Mini">
-<meta property="og:type" content="article">
-<meta property="og:url" content="/posts/ceiling-fan-control/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2021-10-03T00:00:00+00:00">
-<meta property="article:modified_time" content="2021-10-03T00:00:00+00:00"><meta property="og:site_name" content="ccw@blog">
+<link rel=stylesheet href=/css/colours/tokyo-night-storm.css>
+<link rel=stylesheet href=/css/yacht.css>
+<link rel=stylesheet href=/css/custom.css>
 </head>
-<body class=dark-theme>
-<div class=container>
-<header class=header>
-<span class=header__inner>
-<a href=/ class=logo style=text-decoration:none>
-<span class=logo__mark><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44"><path fill="none" d="M15 8l14.729 14.382L15 35.367"/></svg>
-</span>
-<span class=logo__text>ccw@blog ~></span>
-<span class=logo__cursor></span>
-</a>
-<span class=header__right>
-<nav class=menu>
-<ul class="menu__inner menu__inner--desktop">
-<li><a href=/about>About</a></li>
-<li><a href=/archive>Archive</a></li>
-<li><a href=https://github.com/ccwoolf>Github</a></li>
-</ul>
-<ul class="menu__inner menu__inner--mobile">
-<li><a href=/about>About</a></li>
-<li><a href=/archive>Archive</a></li>
-<li><a href=https://github.com/ccwoolf>Github</a></li>
+<body>
+<div class=page>
+<header class=page__header><div class=page__logo><a href=https://blog.woolf.dev class=page__logo-inner>blog.woolf.dev</a></div>
+<nav class="page__nav main-nav">
+<ul>
+<li class=main-nav__item>
+<a class=nav-main-item href=/about/>About</a>
+</li>
+<li class=main-nav__item>
+<a class=nav-main-item href=/tags>Tags</a>
+</li>
+<li class=main-nav__item>
+<a class=nav-main-item href=/posts/>Posts</a>
+</li>
 </ul>
 </nav>
-<span class=menu-trigger><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
-</span>
-<span class=theme-toggle><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 41c10.4934.0 19-8.5066 19-19C41 11.5066 32.4934 3 22 3 11.5066 3 3 11.5066 3 22s8.5066 19 19 19zM7 22C7 13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22z"/></svg>
-</span>
-</span>
-</span>
 </header>
-<div class=content>
-<div class=post>
-<h1 class=post-title>Westinghouse ceiling fan remote control with Home Assistant</h1>
-<div class=post-meta>
-<span class=post-date>
-2021-10-03
-</span>
-</div>
-<div class=post-content>
+<section class=page__body>
+<p>
+Posted 2021-10-03
+</p>
+<header class=content__header>
+<h1>
+<a href=/posts/ceiling-fan-control/>
+Westinghouse ceiling fan remote control with Home Assistant
+</a>
+</h1>
+</header>
+<article class=content__body>
+<p></p>
+<article class=content__main>
 <p>The Westinghouse Bendan ceiling fan comes with an infrared remote control (model number ID6) which is used to set the fan speed and turn the light on and off.</p>
 <p>I&rsquo;ve wanted to control the fan speed via my phone for a while, and have managed to do this using <a href=https://www.home-assistant.io>Home Assistant</a> and a <a href=https://www.ibroadlink.com/rmMini3>Broadlink RM3 Mini</a>.</p>
-<h2 id=linking-the-rm3-mini-to-home-assistant>Linking the RM3 Mini to Home assistant</h2>
+<h2 id=linking-the-rm3-mini-to-home-assistant>
+<a class=headinglink href=#linking-the-rm3-mini-to-home-assistant>
+Linking the RM3 Mini to Home assistant
+</a>
+</h2>
 <p>Adding the RM3 Mini to Home Assistant was relatively simple - but don&rsquo;t bother with any of the instructions about setting up scripts as it&rsquo;s easier to set the codes manually. <a href=https://www.home-assistant.io/integrations/broadlink>Follow the guide</a> otherwise.</p>
 <p>Note that you will require your phone to be connected to an exclusively 2.4GHz WiFi network to set up the RM3 Mini - 2.4GHz and 5GHz WiFi on a single SSID will not work. Workarounds for this include walking away from your access point until your phone connects using the 2.4GHz band, setting up another 2.4GHz-only AP with the same SSID and password, or setting your APs to only broadcast 2.4GHz temporarily.</p>
-<h2 id=learning-codes>Learning codes</h2>
+<h2 id=learning-codes>
+<a class=headinglink href=#learning-codes>
+Learning codes
+</a>
+</h2>
 <p><em>NB: you can try using my codes found below to save you from doing anything. Several models of this ceiling fan are available, and the one installed in my bedroom is one of the halogen models - if you have one of the LED models, your IR codes might be different.</em></p>
 <p>With the RM3 Mini added to Home Assistant, it&rsquo;s now time to learn codes. The easiest way to do this is with <a href=https://github.com/mjg59/python-broadlink>python-broadlink</a> (<a href=https://aur.archlinux.org/packages/python-broadlink>available in the AUR</a>). With that installed, run <code>broadlink_discovery</code> which will scan your LAN and discover any connected Broadlink devices. One of the lines of output will start with <code># broadlink_cli</code> - copy this as it will ne needed to learn the IR codes.</p>
 <p>Next, execute <code>broadlink_cli --type 0x5f36 --host 172.16.1.12 --mac 001122aabbcc --learn</code>, point the ceiling fan remote at the RM3 Mini and press a button on the remote. You IR codes will be printed to your terminal and those can be used in Home Assistant.</p>
-<h2 id=adding-the-fan-to-home-assistant>Adding the fan to Home assistant</h2>
+<h2 id=adding-the-fan-to-home-assistant>
+<a class=headinglink href=#adding-the-fan-to-home-assistant>
+Adding the fan to Home assistant
+</a>
+</h2>
 <p>Adding fan actions to Home Assistant is - unfortunately - accomplished by adding each button as a switch. This is unfortunate because it makes state management a bit of a pain, but it works rather acceptably otherwise.</p>
 <p>I&rsquo;ve set my fan up like so:</p>
 <ul>
@@ -117,27 +97,24 @@ Linking the RM3 Mini to Home assistant Adding the RM3 Mini to Home Assistant was
         <span style=color:#f92672>command_on</span>: <span style=color:#ae81ff>JgCSACQOKQ8MKwwrDSopDwwrDCsNKg0rKA8o7CkOKQ8NKg0qDSopDwwrDSoNKg0rKA8o7CkOKw0NKg0qDSopDw0qDSoNKg0rKA8p6ykPKA8NKg0qDSsoDwwrDSoNKwwrKA8p6ykPKA8NKg0qDSsoDwwrDSoNKw0qKA8p6ykPKg0NKg0qDSsoDwwrDSsMKw0qKQ4pAA0F</span>
         <span style=color:#f92672>command_off</span>: <span style=color:#ae81ff>JgCcACQPKA8NKg0qDSoNKw0qKQ4OKgwrDSoNAAEHKQ8pDgwrDSoNKw0qDSopDg8pDSoNKg0AAQcpDyoNDSoNKg0rDSoMKykODioNKg0qDAABCScQKA8NKg0rDCsNKg0qKQ8MKw0qDSoNAAEIKA8oDwwrDSsNKg0qDCspDwwrDSoNKg0AAQgoDykODCsNKw0qDSoNKigQDCsMKw0qDQANBQ==</span>
 </code></pre></div>
-</div>
-</div>
-</div>
-<footer class=footer>
-<div class=footer__inner>
-<a href=/ class=logo style=text-decoration:none>
-<span class=logo__mark><svg xmlns="http://www.w3.org/2000/svg" class="greater-icon" viewBox="0 0 44 44"><path fill="none" d="M15 8l14.729 14.382L15 35.367"/></svg>
-</span>
-<span class=logo__text>ccw@blog ~></span>
-<span class=logo__cursor></span>
-</a>
-<div class=copyright>
-<span>© 2021 Powered by
-<a href=https://gohugo.io target=_blank rel=noopener>Hugo</a></span>
-<span>Theme created by
-<a href=https://twitter.com/panr target=_blank rel=noopener>panr</a></span>
-</div>
-</div>
+</article>
+</article>
+<hr>
+<footer class=content__footer>
+<p>
+Tags:
+<a href=https://blog.woolf.devtags/home-automation>Home Automation</a>
+</p>
 </footer>
-<script src=/assets/main.js></script>
-<script src=/assets/prism.js></script>
+</section>
+<footer class=page__footer><p class=left>
+</p>
+<p class=middle>
+</p>
+<p class=right>
+<a href=#>Back to top</a>
+</p>
+</footer>
 </div>
 </body>
 </html>

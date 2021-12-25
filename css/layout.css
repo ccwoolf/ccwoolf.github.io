@@ -1,0 +1,40 @@
+.page {
+  max-width: 60rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "body"
+    "footer";
+  grid-template-columns: minmax(0, 1fr);
+  grid-row-gap: 1rem;
+}
+
+.page__header {
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "logo nav";
+  grid-template-columns: auto auto;
+  border-bottom: solid var(--bright-blue);
+}
+
+.page__logo {
+  grid-area: "logo";
+}
+
+.page__nav {
+  grid-area: "nav";
+  padding: 0.25rem;
+}
+
+.page__body {
+  grid-area: body;
+  background-color: var(--background);
+  overflow-wrap: break-word;
+}
+
+.page__footer {
+  padding: 0.25rem;
+  border-top: solid var(--bright-blue);
+  grid-area: footer;
+}

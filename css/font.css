@@ -1,0 +1,18 @@
+:root {
+  --font-monospace: "Fira Mono", monospace;
+  --font-proportional: serif;
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  src: url("fonts/FiraMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Mono";
+  src: url("fonts/FiraMono-Bold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}

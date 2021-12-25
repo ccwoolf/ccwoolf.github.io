@@ -1,0 +1,239 @@
+/* Fonts */
+@import "font.css";
+
+body {
+  font-family: var(--font-monospace);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+/* Heading counters */
+body {counter-reset: h2}
+h2 {counter-reset: h3}
+h3 {counter-reset: h4}
+h4 {counter-reset: h5}
+h5 {counter-reset: h6}
+
+h2:before {counter-increment: h2; content: counter(h2) ". "}
+h3:before {counter-increment: h3; content: counter(h2) "." counter(h3) ". "}
+h4:before {counter-increment: h4; content: counter(h2) "." counter(h3) "." counter(h4) ". "}
+h5:before {counter-increment: h5; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) ". "}
+h6:before {counter-increment: h6; content: counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) ". "}
+
+h2.nocount:before, h3.nocount:before, h4.nocount:before, h5.nocount:before, h6.nocount:before { content: ""; counter-increment: none }
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--foreground);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+h1, h2 {
+  border-bottom: 1px solid var(--foreground);
+}
+
+h1:first-child {
+  margin-top: 0;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+/* Paragraphs */
+p {
+  margin: 0 0 1.5rem 0;
+}
+
+/* Links */
+
+a:link, a:visited {
+  color: var(--foreground);
+}
+
+a:hover, a:active {
+  color: var(--bright-foreground);
+}
+
+h1 > a:link, a:visited,
+h2 > a:link, a:visited,
+h3 > a:link, a:visited,
+h4 > a:link, a:visited,
+h5 > a:link, a:visited,
+h6 > a:link, a:visited {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+h1 > a:hover, a:active,
+h2 > a:hover, a:active,
+h3 > a:hover, a:active,
+h4 > a:hover, a:active,
+h5 > a:hover, a:active,
+h6 > a:hover, a:active {
+  color: var(--bright-foreground);
+  text-decoration: underline;
+}
+
+/* Lists */
+ul {
+  margin: 0 0 1.5rem 0;
+  padding-left: 1.25rem;
+}
+
+ol {
+  margin: 0 0 1.5rem 0;
+  padding-left: 1.75rem;
+}
+
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+  margin: 0;
+}
+
+ul li::marker {
+  content: '-\00A0';
+  color: var(--bright-background);
+}
+
+ol li::marker {
+  color: var(--bright-background);
+}
+
+nav#TableOfContents ol {
+  counter-reset: toc;
+  list-style-type: none;
+}
+
+nav#TableOfContents li::before {
+  content: counters(toc, ".") ". ";
+  counter-increment: toc;
+}
+
+ul#content__tags li {
+  display: inline;
+}
+
+/* Definitions */
+dt {
+  margin: 0;
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 0 0 1.5rem;
+  font-style: italic;
+}
+
+dd + dt {
+  margin-top: 1.5rem;
+}
+
+dl {
+  margin: 0 0 1.5rem 0;
+}
+
+/* Blockquotes */
+blockquote {
+  position: relative;
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+blockquote::before {
+  position: absolute;
+  left: -1.5rem;
+  content: ">";
+  color: var(--bright-background);
+}
+
+/* Code */
+pre,
+code,
+kbd,
+samp {
+  font-size: 0.7rem;
+  line-height:1.1rem;
+  background: var(--black) !important;
+  font-family: var(--font-monospace);
+  color: var(--bright-background);
+}
+
+p code {
+  padding: 0.2rem;
+  border-radius: 0.1rem;
+  border: 1px solid var(--bright-black);
+}
+
+pre {
+  overflow-x: auto;
+  padding: 0.5rem;
+  margin: 0 0 1.5rem 0;
+}
+
+/* Emphasis */
+b,
+strong {
+  font-weight: 600;
+}
+
+/* Highlighting */
+::selection,
+mark {
+  background-color: var(--yellow);
+  color: var(--background);
+}
+
+/* Other typographic elements */
+hr {
+  border: 0;
+  margin-bottom: 1.5rem;
+}
+
+hr:after {
+  content: '---';
+  color: var(--bright-background);
+}
+
+span.post__tag {
+  font-style: italic;
+}
+
+/* Prevent super/sub from affecting line height */
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.25rem;
+  font-size: unset;
+}
+
+sub {
+  top: 0.25rem;
+}
+
+/* Tables */
+table {
+  border-spacing: 0;
+  margin: 0 0 1.5rem 0;
+  overflow-wrap: anywhere;
+}
+
+th, td {
+  padding: 0 .75rem;
+  vertical-align: top;
+}
+
+th:first-child, td:first-child {
+  padding-left: 0;
+}
+
+th {
+  text-align: inherit;
+}

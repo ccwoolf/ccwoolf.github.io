@@ -1,0 +1,54 @@
+.page__header {
+  background: var(--background);
+}
+
+.page__logo {
+  margin: 0;
+  color: var(--foreground);
+  padding: 0.25rem;
+}
+
+.page__logo:before {
+  content: none;
+}
+
+.page__logo-inner {
+  display: block;
+  padding: 0.25rem;
+  font-weight: bold;
+}
+
+a.page__logo-inner:link, a.page__logo-inner:visited {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.page__logo-inner:before {
+  content: none;
+}
+
+.page__logo-inner:after {
+  content: " ~>";
+  color: var(--blue);
+}
+
+.main-nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0.25rem 0;
+}
+
+.main-nav li {
+  margin-left: 2.5rem;
+  text-transform: lowercase;
+}
+
+.main-nav li:first-child {
+  margin-left: 0;
+}
+
+.main-nav li::marker {
+  content: "./";
+}

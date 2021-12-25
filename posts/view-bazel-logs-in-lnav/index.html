@@ -1,0 +1,66 @@
+<!doctype html><html lang=en>
+<head><title>
+blog.woolf.dev
+&ndash; Viewing Bazel logs using LNAV
+</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=/css/colours/tokyo-night-storm.css>
+<link rel=stylesheet href=/css/yacht.css>
+<link rel=stylesheet href=/css/custom.css>
+</head>
+<body>
+<div class=page>
+<header class=page__header><div class=page__logo><a href=https://blog.woolf.dev class=page__logo-inner>blog.woolf.dev</a></div>
+<nav class="page__nav main-nav">
+<ul>
+<li class=main-nav__item>
+<a class=nav-main-item href=/about/>About</a>
+</li>
+<li class=main-nav__item>
+<a class=nav-main-item href=/tags>Tags</a>
+</li>
+<li class=main-nav__item>
+<a class=nav-main-item href=/posts/>Posts</a>
+</li>
+</ul>
+</nav>
+</header>
+<section class=page__body>
+<p>
+Posted 2021-10-04
+</p>
+<header class=content__header>
+<h1>
+<a href=/posts/view-bazel-logs-in-lnav/>
+Viewing Bazel logs using LNAV
+</a>
+</h1>
+</header>
+<article class=content__body>
+<p></p>
+<article class=content__main>
+<p>Bazel doesn&rsquo;t support streaming logs to the terminal, which means that long Bazel builds are about as fun as watching paint dry. Fair enough - you shouldn&rsquo;t be there babysitting your builds anyway - but sometimes a little more information is nice to see, especially when developing a new rule.</p>
+<p>While it&rsquo;s possible to <code>tail -f</code> or <code>less +F</code> the files in <code>bazel-out/_tmp/actions</code>, it can be annoying to deal with output of rules you don&rsquo;t currently care about. This is where <a href=https://lnav.org>LNAV</a>, the log file navigator comes in.</p>
+<p>It allows you to interact with your log files, switch between them, and scroll back regardless of your terminal emulator&rsquo;s scrollback settings.</p>
+<p>For use with Bazel, invoking as <code>lnav bazel-out/_tmp/actions</code> will launch LNAV watching the stdout and stderr transcripts of your currently running jobs.</p>
+</article>
+</article>
+<hr>
+<footer class=content__footer>
+<p>
+Tags:
+<a href=https://blog.woolf.devtags/linux>Linux</a>
+</p>
+</footer>
+</section>
+<footer class=page__footer><p class=left>
+</p>
+<p class=middle>
+</p>
+<p class=right>
+<a href=#>Back to top</a>
+</p>
+</footer>
+</div>
+</body>
+</html>
