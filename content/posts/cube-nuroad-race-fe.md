@@ -6,7 +6,7 @@ tags:
 toc: true
 ---
 
-The Cube Nuroad Race FE is provides amazing value for money and being one of the better equipped bikes at the £1,250 price point. However, to be that agressively priced, and be _fully equipped_ (hence FE in the name) with a rack, mudguards, dynamo, and front and rear lights, some corners had to be cut and some compromises made.
+The Cube Nuroad Race FE provides amazing value for money and is one of the better equipped bikes at the £1,250 price point. However, to be that agressively priced, and be _fully equipped_ (hence FE in the name) with a rack, mudguards, dynamo, and front and rear lights, some corners had to be cut and some compromises made.
 
 This list isn't meant to be a review (though I do love my one) but rather a collection of information I've come to learn about it over a year's worth of riding, indoors and out, on tarmac and gravel.
 
@@ -106,7 +106,7 @@ Tall saddlebags such as the Topeak Mondopack Hydro can interfere with the rear m
 
 ### Rear rack
 
-The rear rack is serviceable and rated for XXkg. It has no ability to mount top bags, and pannier pairs which are joined in the centre probably won't work well with this rack. Use two individual bags.
+The rear rack is serviceable and rated for 25kg. It has no ability to mount top bags, and pannier pairs which are joined in the centre probably won't work well with this rack. Use two individual bags.
 
 ## Indoor use
 
